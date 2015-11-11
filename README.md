@@ -41,3 +41,5 @@ var cellref = require('cellref');
 cellref('R59C73'); // will return BU59
 cellref('BU59'); // will return R59C73
 ```
+
+If an invalid cell reference (not `A1` or `R1C1` notation) is passed as an argument to any of the methods, an `Error` will be thrown.
