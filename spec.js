@@ -17,4 +17,22 @@ describe('cellref', function () {
     cellref('R1C1').should.be.exactly('A1');
     cellref('BU59').should.be.exactly('R59C73');
   });
+
+  it('should throw an error if the R1C1 value is invalid', function () {
+    should.throws(function () {
+      cellref.toA1('InvalidValue');
+    }, Error);
+  });
+
+  it('should throw an error if the A1 value is invalid', function () {
+    should.throws(function () {
+      cellref.toR1C1('InvalidValue');
+    }, Error);
+  });
+
+  it('should throw an error if it cannot auto detect the notation used', function () {
+    should.throws(function () {
+      cellref('InvalidValue');
+    }, Error);
+  });
 });

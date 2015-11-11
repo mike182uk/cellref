@@ -19,9 +19,14 @@ var A1 = /^([A-Z]+)(\d+)$/;
  *
  * @param {string} a1Value
  * @returns {string}
+ * @throws {Error}
  */
 
 function A1toR1C1(a1Value) {
+  if (!A1.test(a1Value)) {
+    throw new Error(a1Value + ' is not a valid A1 cell reference');
+  }
+
   var a1Parts = a1Value
     .replace(A1, '$1,$2')
     .split(',');
@@ -42,9 +47,14 @@ function A1toR1C1(a1Value) {
  *
  * @param {string} r1c1Value
  * @returns {string}
+ * @throws {Error}
  */
 
 function R1C1toA1(r1c1Value) {
+  if (!R1C1.test(r1c1Value)) {
+    throw new Error(r1c1Value + ' is not a valid R1C1 cell reference');
+  }
+
   var r1c1Parts = r1c1Value
     .replace(R1C1, '$1,$2')
     .split(',');
@@ -65,6 +75,7 @@ function R1C1toA1(r1c1Value) {
  *
  * @param {string} value
  * @returns {string}
+ * @throws {Error}
  */
 
 function cellref(value) {
@@ -72,7 +83,11 @@ function cellref(value) {
     return R1C1toA1(value);
   }
 
-  return A1toR1C1(value);
+  if (A1.test(value)) {
+    return A1toR1C1(value);
+  }
+
+  throw new Error('could not detect cell reference notation for ' + value);
 }
 
 /**
