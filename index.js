@@ -22,7 +22,7 @@ var A1 = /^([A-Z]+)(\d+)$/;
  * @throws {Error}
  */
 
-function A1toR1C1(ref) {
+function convertA1toR1C1(ref) {
   if (!A1.test(ref)) {
     throw new Error(ref + ' is not a valid A1 cell reference');
   }
@@ -50,7 +50,7 @@ function A1toR1C1(ref) {
  * @throws {Error}
  */
 
-function R1C1toA1(ref) {
+function convertR1C1toA1(ref) {
   if (!R1C1.test(ref)) {
     throw new Error(ref + ' is not a valid R1C1 cell reference');
   }
@@ -80,11 +80,11 @@ function R1C1toA1(ref) {
 
 function cellref(ref) {
   if (R1C1.test(ref)) {
-    return R1C1toA1(ref);
+    return convertR1C1toA1(ref);
   }
 
   if (A1.test(ref)) {
-    return A1toR1C1(ref);
+    return convertA1toR1C1(ref);
   }
 
   throw new Error('could not detect cell reference notation for ' + ref);
@@ -95,5 +95,5 @@ function cellref(ref) {
  */
 
 module.exports = cellref;
-module.exports.toA1 = R1C1toA1;
-module.exports.toR1C1 = A1toR1C1;
+module.exports.toA1 = convertR1C1toA1;
+module.exports.toR1C1 = convertA1toR1C1;
