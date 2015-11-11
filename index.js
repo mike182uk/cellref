@@ -67,7 +67,7 @@ function R1C1toA1(r1c1Value) {
  * @returns {string}
  */
 
-function autoConvert(value) {
+function cellref(value) {
   if (R1C1.test(value)) {
     return R1C1toA1(value);
   }
@@ -79,6 +79,6 @@ function autoConvert(value) {
  * Exports
  */
 
-module.exports = autoConvert;
+module.exports = cellref;
 module.exports.toA1 = R1C1toA1;
 module.exports.toR1C1 = A1toR1C1;
