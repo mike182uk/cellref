@@ -4,7 +4,7 @@
  * @type {RegExp}
  */
 
-var R1C1 = /R([0-9]+)C([0-9]+)/;
+var R1C1 = /^R(\d+)C(\d+)$/;
 
 /**
  * A1 pattern
@@ -12,7 +12,7 @@ var R1C1 = /R([0-9]+)C([0-9]+)/;
  * @type {RegExp}
  */
 
-var A1 = /(\$?[A-Z]*)(\$?\d*)/;
+var A1 = /^([A-Z]+)(\d+)$/;
 
 /**
  * Convert A1 notation to R1C1 notation
