@@ -1,0 +1,36 @@
+{
+  "name": "cellref",
+  "version": "1.0.0",
+  "description": "Convert between cell reference styles (A1 notation & R1C1 notation)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec.js",
+    "sa": "jscs index.js && jshint index.js"
+  },
+  "author": "Michael David Barrett <mike182uk@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mike182uk/cellref.git"
+  },
+  "homepage": "https://github.com/mike182uk/cellref",
+  "keywords": [
+    "A1",
+    "R1C1",
+    "excel",
+    "xlsx",
+    "xls",
+    "cell",
+    "spreadsheet"
+  ],
+  "devDependencies": {
+    "codeclimate-test-reporter": "^0.1.1",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.0",
+    "jscs": "^2.5.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3",
+    "mocha-lcov-reporter": "^1.0.0",
+    "should": "^7.1.1"
+  }
+}
