@@ -1,4 +1,12 @@
 /**
+ * Exports
+ */
+
+module.exports = cellref;
+module.exports.toA1 = convertR1C1toA1;
+module.exports.toR1C1 = convertA1toR1C1;
+
+/**
  * R1C1 pattern
  *
  * @type {RegExp}
@@ -13,6 +21,26 @@ var R1C1 = /^R(\d+)C(\d+)$/;
  */
 
 var A1 = /^([A-Z]+)(\d+)$/;
+
+/**
+ * Auto detect notation used and convert to the opposite notation
+ *
+ * @param {string} ref
+ * @returns {string}
+ * @throws {Error}
+ */
+
+function cellref(ref) {
+  if (R1C1.test(ref)) {
+    return convertR1C1toA1(ref);
+  }
+
+  if (A1.test(ref)) {
+    return convertA1toR1C1(ref);
+  }
+
+  throw new Error('could not detect cell reference notation for ' + ref);
+}
 
 /**
  * Convert A1 notation to R1C1 notation
@@ -69,31 +97,3 @@ function convertR1C1toA1(ref) {
 
   return columnStr + row;
 }
-
-/**
- * Auto detects notation used and converts to the opposite notation
- *
- * @param {string} ref
- * @returns {string}
- * @throws {Error}
- */
-
-function cellref(ref) {
-  if (R1C1.test(ref)) {
-    return convertR1C1toA1(ref);
-  }
-
-  if (A1.test(ref)) {
-    return convertA1toR1C1(ref);
-  }
-
-  throw new Error('could not detect cell reference notation for ' + ref);
-}
-
-/**
- * Exports
- */
-
-module.exports = cellref;
-module.exports.toA1 = convertR1C1toA1;
-module.exports.toR1C1 = convertA1toR1C1;
