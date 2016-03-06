@@ -33,3 +33,11 @@ You can run all of the specs in the project using:
 ```bash
 npm test
 ```
+
+## Running Static Analysis Tools
+
+You can run all of the static analysis tools used by the project using:
+
+```bash
+npm run sa
+```
