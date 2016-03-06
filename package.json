@@ -4,6 +4,7 @@
   "description": "Convert between cell reference styles (A1 notation & R1C1 notation)",
   "main": "index.js",
   "scripts": {
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -x spec.js spec.js",
     "test": "mocha spec.js",
     "sa": "jscs index.js && jshint index.js"
   },
