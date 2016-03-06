@@ -6,6 +6,7 @@
 [![Coveralls](https://img.shields.io/coveralls/mike182uk/cellref/master.svg?style=flat-square)](https://coveralls.io/r/mike182uk/cellref)
 [![npm](https://img.shields.io/npm/dm/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
 [![License](https://img.shields.io/github/license/mike182uk/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Convert between cell reference styles (`A1` notation & `R1C1` notation).
 
