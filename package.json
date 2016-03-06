@@ -14,6 +14,9 @@
     "url": "git://github.com/mike182uk/cellref.git"
   },
   "homepage": "https://github.com/mike182uk/cellref",
+  "bugs": {
+    "url": "https://github.com/mike182uk/cellref/issues"
+  },
   "keywords": [
     "A1",
     "R1C1",
