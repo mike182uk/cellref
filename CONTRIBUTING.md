@@ -24,6 +24,8 @@ In order for your Pull Request to be merged, please ensure it meets the followin
 
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please squash them before submitting.
 
+- **Use conventional-changelog style commit messages** - See [here](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines) for more details. This project is [commitizen](https://commitizen.github.io/cz-cli/) friendly.
+
 ## Running Specs
 
 You can run all of the specs in the project using:
