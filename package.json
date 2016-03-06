@@ -23,6 +23,9 @@
     "cell",
     "spreadsheet"
   ],
+  "engines": {
+    "node": ">=0.10"
+  },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.3.0",
     "coveralls": "^2.11.4",
