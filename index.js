@@ -91,8 +91,8 @@ function convertR1C1toA1(ref) {
   var column = refParts[1];
   var columnStr = '';
 
-  for (; column; column = Math.floor(column / 26)) {
-    columnStr = String.fromCharCode((column % 26) + 64) + columnStr;
+  for (; column; column = Math.floor((column - 1) / 26)) {
+    columnStr = String.fromCharCode(((column - 1) % 26) + 65) + columnStr;
   }
 
   return columnStr + row;
