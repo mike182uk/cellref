@@ -12,7 +12,7 @@ Please report issues via the issue tracker on [Github](https://github.com/mike18
 
 In order for your Pull Request to be merged, please ensure it meets the following criteria:
 
-- **[Node.js coding style](https://github.com/felixge/node-style-guide)** - [JSCS](http://jscs.info/), [JSHint](http://jshint.com/). Make sure you run `npm run sa` before committing your code.
+- **[Standard JS coding style](http://standardjs.com/index.html)** - Make sure you run `npm run lint` before committing your code.
 
 - **Add specs where appropriate** - [Mocha](http://mochajs.org/), [Should](https://shouldjs.github.io/)
 

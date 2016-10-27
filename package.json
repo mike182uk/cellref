@@ -6,7 +6,7 @@
   "scripts": {
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -x spec.js spec.js",
     "test": "mocha spec.js",
-    "sa": "jscs index.js && jshint index.js"
+    "lint": "standard *.js"
   },
   "author": "Michael David Barrett <mike182uk@gmail.com>",
   "license": "MIT",
@@ -35,11 +35,11 @@
     "coveralls": "^2.11.4",
     "cz-conventional-changelog": "^1.1.5",
     "istanbul": "^0.4.0",
-    "jscs": "^3.0.3",
     "jshint": "^2.8.0",
     "mocha": "^3.0.0",
     "mocha-lcov-reporter": "^1.0.0",
-    "should": "^11.0.0"
+    "should": "^11.0.0",
+    "standard": "^8.5.0"
   },
   "config": {
     "commitizen": {

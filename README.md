@@ -21,26 +21,26 @@ npm install --save cellref
 ### Convert A1 to R1C1
 
 ```js
-var cellref = require('cellref');
+var cellref = require('cellref')
 
-cellref.toR1C1('BU59'); // will return R59C73
+cellref.toR1C1('BU59') // will return R59C73
 ```
 
 ### Convert R1C1 to A1
 
 ```js
-var cellref = require('cellref');
+var cellref = require('cellref')
 
-cellref.toA1('R59C73'); // will return BU59
+cellref.toA1('R59C73') // will return BU59
 ```
 
 ### Convert automatically based on the input
 
 ```js
-var cellref = require('cellref');
+var cellref = require('cellref')
 
-cellref('R59C73'); // will return BU59
-cellref('BU59'); // will return R59C73
+cellref('R59C73') // will return BU59
+cellref('BU59') // will return R59C73
 ```
 
 If an invalid cell reference (not `A1` or `R1C1` notation) is passed as an argument to any of the methods, an `Error` will be thrown.
