@@ -43,4 +43,34 @@ cellref('R59C73'); // will return BU59
 cellref('BU59'); // will return R59C73
 ```
 
+### Covert A1 range to R1C1 range
+
+```js
+var cellref = require('cellref');
+
+cellref.toR1C1('BU59:BU60', true); // will return R59C73:R60C73
+cellref.toR1C1Range('BU59:BU60'); // will return R59C73:R60C73
+```
+
+### Covert R1C1 range to A1 range
+
+```js
+var cellref = require('cellref');
+
+cellref.toA1('R59C73:R60C73', true); // will return BU59:BU60
+cellref.toA1Range('R59C73:R60C73'); // will return BU59:BU60
+```
+
+### Convert range automatically based on the input
+
+```js
+var cellref = require('cellref');
+
+cellref('BU59:BU60', true); // will return R59C73:R60C73
+cellref('R59C73:R60C73', true); // will return BU59:BU60
+
+cellref.range('BU59:BU60'); // will return R59C73:R60C73
+cellref.range('R59C73:R60C73'); // will return BU59:BU60
+```
+
 If an invalid cell reference (not `A1` or `R1C1` notation) is passed as an argument to any of the methods, an `Error` will be thrown.
