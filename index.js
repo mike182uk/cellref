@@ -12,7 +12,7 @@ module.exports.toR1C1 = convertA1toR1C1
  * @type {RegExp}
  */
 
-var R1C1 = /^R(\d+)C(\d+)$/
+var R1C1 = /^R([1-9]\d*)C([1-9]\d*)$/
 
 /**
  * A1 pattern

@@ -29,6 +29,18 @@ describe('cellref', function () {
     }, Error)
   })
 
+  it('should throw an error if the R1C1 cell reference has a row number of zero', function () {
+    should.throws(function () {
+      cellref.toA1('R0C1')
+    }, Error)
+  })
+
+  it('should throw an error if the R1C1 cell reference has a column number of zero', function () {
+    should.throws(function () {
+      cellref.toA1('R1C0')
+    }, Error)
+  })
+
   it('should throw an error if the A1 cell reference is invalid', function () {
     should.throws(function () {
       cellref.toR1C1('InvalidCellRef')
