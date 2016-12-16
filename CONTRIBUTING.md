@@ -16,7 +16,7 @@ In order for your Pull Request to be merged, please ensure it meets the followin
 
 - **Add specs where appropriate** - [Mocha](http://mochajs.org/), [Should](https://shouldjs.github.io/)
 
-- **Document any change in behavior** - Make sure the README and any other relevant documentation are kept up-to-date.
+- **Document any change in behaviour** - Make sure the README and any other relevant documentation are kept up-to-date.
 
 - **Create topic branches** - i.e `feature/some-awesome-feature`.
 
@@ -32,12 +32,4 @@ You can run all of the specs in the project using:
 
 ```bash
 npm test
-```
-
-## Running Static Analysis Tools
-
-You can run all of the static analysis tools used by the project using:
-
-```bash
-npm run sa
 ```

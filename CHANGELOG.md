@@ -2,7 +2,7 @@
 
 ## 2.0.2
 
-- Fix issue where invalid R1C1 ref could be passed to cellref.toA1 ([@robinbullocks4rb](https://github.com/robinbullocks4rb))
+- Fix issue where invalid R1C1 ref could be passed to `cellref.toA1` ([@robinbullocks4rb](https://github.com/robinbullocks4rb))
 
 ## 2.0.1
 
