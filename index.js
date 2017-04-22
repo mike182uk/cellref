@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Exports
  */
@@ -12,7 +14,7 @@ module.exports.toR1C1 = convertA1toR1C1
  * @type {RegExp}
  */
 
-var R1C1 = /^R([1-9]\d*)C([1-9]\d*)$/
+const R1C1 = /^R([1-9]\d*)C([1-9]\d*)$/
 
 /**
  * A1 pattern
@@ -20,14 +22,14 @@ var R1C1 = /^R([1-9]\d*)C([1-9]\d*)$/
  * @type {RegExp}
  */
 
-var A1 = /^([A-Z]+)(\d+)$/
+const A1 = /^([A-Z]+)(\d+)$/
 
 /**
  * Auto detect notation used and convert to the opposite notation
  *
- * @param {string} ref
- * @returns {string}
- * @throws {Error}
+ * @param   {String} ref
+ * @returns {String}
+ * @throws  {Error}
  */
 
 function cellref (ref) {
@@ -39,20 +41,20 @@ function cellref (ref) {
     return convertA1toR1C1(ref)
   }
 
-  throw new Error('could not detect cell reference notation for ' + ref)
+  throw new Error(`could not detect cell reference notation for ${ref}`)
 }
 
 /**
  * Convert A1 notation to R1C1 notation
  *
- * @param {string} ref
- * @returns {string}
- * @throws {Error}
+ * @param   {String} ref
+ * @returns {String}
+ * @throws  {Error}
  */
 
 function convertA1toR1C1 (ref) {
   if (!A1.test(ref)) {
-    throw new Error(ref + ' is not a valid A1 cell reference')
+    throw new Error(`${ref} is not a valid A1 cell reference`)
   }
 
   var refParts = ref
@@ -67,20 +69,20 @@ function convertA1toR1C1 (ref) {
     column = 26 * column + columnStr.charCodeAt(i) - 64
   }
 
-  return 'R' + row + 'C' + column
+  return `R${row}C${column}`
 }
 
 /**
  * Convert R1C1 notation to A1 notation
  *
- * @param {string} ref
- * @returns {string}
+ * @param {String} ref
+ * @returns {String}
  * @throws {Error}
  */
 
 function convertR1C1toA1 (ref) {
   if (!R1C1.test(ref)) {
-    throw new Error(ref + ' is not a valid R1C1 cell reference')
+    throw new Error(`${ref} is not a valid R1C1 cell reference`)
   }
 
   var refParts = ref

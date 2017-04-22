@@ -1,4 +1,4 @@
-# Cellref
+# cellref
 
 [![Version](https://img.shields.io/npm/v/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
 [![Build Status](https://img.shields.io/travis/mike182uk/cellref.svg?style=flat-square)](http://travis-ci.org/mike182uk/cellref)
@@ -20,7 +20,7 @@ npm install --save cellref
 ### Convert A1 to R1C1
 
 ```js
-var cellref = require('cellref')
+const cellref = require('cellref')
 
 cellref.toR1C1('BU59') // will return R59C73
 ```
@@ -28,7 +28,7 @@ cellref.toR1C1('BU59') // will return R59C73
 ### Convert R1C1 to A1
 
 ```js
-var cellref = require('cellref')
+const cellref = require('cellref')
 
 cellref.toA1('R59C73') // will return BU59
 ```
@@ -36,10 +36,10 @@ cellref.toA1('R59C73') // will return BU59
 ### Convert automatically based on the input
 
 ```js
-var cellref = require('cellref')
+const cellref = require('cellref')
 
 cellref('R59C73') // will return BU59
 cellref('BU59') // will return R59C73
 ```
 
-If an invalid cell reference (not `A1` or `R1C1` notation) is passed as an argument to any of the methods, an `Error` will be thrown.
+If an invalid cell reference (not `A1` or `R1C1` notation) is passed as an argument to any of cellref functions, an `Error` will be thrown.
