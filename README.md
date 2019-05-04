@@ -2,7 +2,6 @@
 
 [![Version](https://img.shields.io/npm/v/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
 [![Build Status](https://img.shields.io/travis/mike182uk/cellref.svg?style=flat-square)](http://travis-ci.org/mike182uk/cellref)
-[![Code Climate](https://img.shields.io/codeclimate/github/mike182uk/cellref.svg?style=flat-square)](https://codeclimate.com/github/mike182uk/cellref)
 [![Coveralls](https://img.shields.io/coveralls/mike182uk/cellref/master.svg?style=flat-square)](https://coveralls.io/r/mike182uk/cellref)
 [![npm](https://img.shields.io/npm/dm/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
 [![License](https://img.shields.io/github/license/mike182uk/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
