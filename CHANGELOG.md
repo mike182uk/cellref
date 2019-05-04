@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.0
+
+- Drop support for Node.js `< 8.0.0`
+
 ## 3.0.0
 
 - Drop support for Node.js `< 4.0.0`

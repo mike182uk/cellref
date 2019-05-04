@@ -1,6 +1,6 @@
 {
   "name": "cellref",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Convert between cell reference styles (A1 notation & R1C1 notation)",
   "main": "index.js",
   "scripts": {
