@@ -28,7 +28,7 @@
     "spreadsheet"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "devDependencies": {
     "coveralls": "^3.0.3",

@@ -1,5 +1,3 @@
-'use strict'
-
 /* globals describe, it */
 
 const should = require('should')
