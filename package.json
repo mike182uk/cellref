@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -x spec.js spec.js",
-    "test": "mocha spec.js",
-    "lint": "standard *.js"
+    "lint": "standard *.js",
+    "test": "mocha spec.js"
   },
   "author": "Michael David Barrett <mike182uk@gmail.com>",
   "license": "MIT",
