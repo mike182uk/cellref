@@ -1,6 +1,6 @@
 {
   "name": "cellref",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Convert between cell reference styles (A1 notation & R1C1 notation)",
   "main": "index.js",
   "scripts": {
@@ -28,12 +28,11 @@
     "spreadsheet"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
   "devDependencies": {
-    "coveralls": "^3.0.6",
     "istanbul": "^0.4.5",
-    "mocha": "^7.0.1",
+    "mocha": "^10.2.0",
     "mocha-lcov-reporter": "^1.3.0",
     "should": "^13.2.3",
     "standard": "^17.0.0"
