@@ -1,7 +1,7 @@
 # cellref
 
 [![Version](https://img.shields.io/npm/v/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
-[![Build Status](https://img.shields.io/github/workflow/status/mike182uk/cellref/CI/master?style=flat-square)](https://github.com/mike182uk/cellref/actions?query=workflow%3ACI)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/mike182uk/cellref/ci.yml?branch=master&style=flat-square)](https://github.com/mike182uk/cellref/actions/workflows/ci.yml?query=workflow%3ACI)
 [![Coveralls](https://img.shields.io/coveralls/mike182uk/cellref/master.svg?style=flat-square)](https://coveralls.io/r/mike182uk/cellref)
 [![npm](https://img.shields.io/npm/dm/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
 [![License](https://img.shields.io/github/license/mike182uk/cellref.svg?style=flat-square)](https://www.npmjs.com/package/cellref)
